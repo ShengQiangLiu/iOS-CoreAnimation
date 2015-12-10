@@ -36,6 +36,7 @@
 		84C8817E1C13219200D2E6AB /* CAEmitterLayerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8817D1C13219200D2E6AB /* CAEmitterLayerCtrl.m */; };
 		84C881811C1321AB00D2E6AB /* CAEAGLLayerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C881801C1321AB00D2E6AB /* CAEAGLLayerCtrl.m */; };
 		84C881841C1321BC00D2E6AB /* AVPlayerLayerCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C881831C1321BC00D2E6AB /* AVPlayerLayerCtrl.m */; };
+		84C881871C19A4E000D2E6AB /* CAScrollLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C881861C19A4E000D2E6AB /* CAScrollLayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,8 @@
 		84C881801C1321AB00D2E6AB /* CAEAGLLayerCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEAGLLayerCtrl.m; sourceTree = "<group>"; };
 		84C881821C1321BC00D2E6AB /* AVPlayerLayerCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerLayerCtrl.h; sourceTree = "<group>"; };
 		84C881831C1321BC00D2E6AB /* AVPlayerLayerCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerLayerCtrl.m; sourceTree = "<group>"; };
+		84C881851C19A4E000D2E6AB /* CAScrollLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScrollLayerView.h; sourceTree = "<group>"; };
+		84C881861C19A4E000D2E6AB /* CAScrollLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScrollLayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 				84C881741C13214700D2E6AB /* CAReplicatorLayerCtrl.m */,
 				84C881761C13215E00D2E6AB /* CAScrollLayerCtrl.h */,
 				84C881771C13215E00D2E6AB /* CAScrollLayerCtrl.m */,
+				84C881851C19A4E000D2E6AB /* CAScrollLayerView.h */,
+				84C881861C19A4E000D2E6AB /* CAScrollLayerView.m */,
 				84C881791C13217A00D2E6AB /* CATiledLayerCtrl.h */,
 				84C8817A1C13217A00D2E6AB /* CATiledLayerCtrl.m */,
 				84C8817C1C13219200D2E6AB /* CAEmitterLayerCtrl.h */,
@@ -344,6 +349,7 @@
 				84C881401C12D20B00D2E6AB /* Chapter4ViewController.m in Sources */,
 				84C8816C1C1320D700D2E6AB /* CATextLayerCtrl.m in Sources */,
 				84C8817B1C13217A00D2E6AB /* CATiledLayerCtrl.m in Sources */,
+				84C881871C19A4E000D2E6AB /* CAScrollLayerView.m in Sources */,
 				84C8816F1C1320EF00D2E6AB /* CATransformLayerCtrl.m in Sources */,
 				84C8811F1C12C98600D2E6AB /* AppDelegate.m in Sources */,
 				84C8817E1C13219200D2E6AB /* CAEmitterLayerCtrl.m in Sources */,
@@ -503,6 +509,7 @@
 				84C881301C12C98600D2E6AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

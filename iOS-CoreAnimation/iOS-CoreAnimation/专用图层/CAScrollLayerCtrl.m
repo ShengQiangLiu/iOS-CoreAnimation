@@ -7,9 +7,10 @@
 //
 
 #import "CAScrollLayerCtrl.h"
+#import "CAScrollLayerView.h"
 
 @interface CAScrollLayerCtrl ()
-
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 @implementation CAScrollLayerCtrl
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"clock"]];
+    
+    
+    CAScrollLayerView *scrollLayer = [[CAScrollLayerView alloc] initWithFrame:CGRectMake(50, 100, 300, 300)];
+    scrollLayer.backgroundColor = [UIColor whiteColor];
+    [scrollLayer addSubview:self.imageView];
+    [self.view addSubview:scrollLayer];
+    
 }
 
 - (void)didReceiveMemoryWarning {
