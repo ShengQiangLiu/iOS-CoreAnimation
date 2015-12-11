@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84599EBE1C1A72F8007CE225 /* CABasicAnimationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84599EBD1C1A72F8007CE225 /* CABasicAnimationCtrl.m */; };
+		84599EC11C1A7316007CE225 /* CAKeyframeAnimationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84599EC01C1A7316007CE225 /* CAKeyframeAnimationCtrl.m */; };
 		84C8811C1C12C98600D2E6AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8811B1C12C98600D2E6AB /* main.m */; };
 		84C8811F1C12C98600D2E6AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C8811E1C12C98600D2E6AB /* AppDelegate.m */; };
 		84C881221C12C98600D2E6AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C881211C12C98600D2E6AB /* ViewController.m */; };
@@ -40,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84599EBC1C1A72F8007CE225 /* CABasicAnimationCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationCtrl.h; sourceTree = "<group>"; };
+		84599EBD1C1A72F8007CE225 /* CABasicAnimationCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationCtrl.m; sourceTree = "<group>"; };
+		84599EBF1C1A7316007CE225 /* CAKeyframeAnimationCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationCtrl.h; sourceTree = "<group>"; };
+		84599EC01C1A7316007CE225 /* CAKeyframeAnimationCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationCtrl.m; sourceTree = "<group>"; };
 		84C881171C12C98600D2E6AB /* iOS-CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-CoreAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C8811B1C12C98600D2E6AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84C8811D1C12C98600D2E6AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -219,6 +225,10 @@
 			children = (
 				84C881581C131D7800D2E6AB /* Chapter8ViewController.h */,
 				84C881591C131D7800D2E6AB /* Chapter8ViewController.m */,
+				84599EBC1C1A72F8007CE225 /* CABasicAnimationCtrl.h */,
+				84599EBD1C1A72F8007CE225 /* CABasicAnimationCtrl.m */,
+				84599EBF1C1A7316007CE225 /* CAKeyframeAnimationCtrl.h */,
+				84599EC01C1A7316007CE225 /* CAKeyframeAnimationCtrl.m */,
 			);
 			path = "显式动画";
 			sourceTree = "<group>";
@@ -354,9 +364,11 @@
 				84C8811F1C12C98600D2E6AB /* AppDelegate.m in Sources */,
 				84C8817E1C13219200D2E6AB /* CAEmitterLayerCtrl.m in Sources */,
 				84C8813D1C12D1FC00D2E6AB /* Chapter3ViewController.m in Sources */,
+				84599EBE1C1A72F8007CE225 /* CABasicAnimationCtrl.m in Sources */,
 				84C881541C131D5600D2E6AB /* Chapter6ViewController.m in Sources */,
 				84C881751C13214700D2E6AB /* CAReplicatorLayerCtrl.m in Sources */,
 				84C881571C131D6900D2E6AB /* Chapter7ViewController.m in Sources */,
+				84599EC11C1A7316007CE225 /* CAKeyframeAnimationCtrl.m in Sources */,
 				84C8813A1C12D1ED00D2E6AB /* Chapter2ViewController.m in Sources */,
 				84C881691C1320C500D2E6AB /* CAShapeLayerCtrl.m in Sources */,
 				84C881371C12D1C800D2E6AB /* Chapter1ViewController.m in Sources */,

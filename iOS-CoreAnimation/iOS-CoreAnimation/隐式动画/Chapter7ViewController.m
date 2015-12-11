@@ -30,6 +30,15 @@
     self.colorLayer = [CALayer layer];
     self.colorLayer.frame = CGRectMake(100.0f, 200.0f, 150.0f, 150.0f);
     self.colorLayer.backgroundColor = [UIColor blueColor].CGColor;
+    
+    
+    //add a custom action
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromLeft;
+    self.colorLayer.actions = @{@"backgroundColor": transition};
+    
+    
     //add it to our view
     [self.view.layer addSublayer:self.colorLayer];
     
@@ -62,6 +71,32 @@
     self.colorLayer.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0].CGColor;
     //commit the transaction
     [CATransaction commit];
+}
+
+
+/**
+ *  呈现于模型
+ *  每个图层属性的显示值都被存储在一个叫做呈现图层的独立图层当中，他可以通过-presentationLayer方法来访问。
+ */
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    //get the touch point
+    CGPoint point = [[touches anyObject] locationInView:self.view];
+    //check if we've tapped the moving layer
+    if ([self.colorLayer.presentationLayer hitTest:point]) {
+        //randomize the layer background color
+        CGFloat red = arc4random() / (CGFloat)INT_MAX;
+        CGFloat green = arc4random() / (CGFloat)INT_MAX;
+        CGFloat blue = arc4random() / (CGFloat)INT_MAX;
+        self.colorLayer.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0].CGColor;
+    } else {
+        //otherwise (slowly) move the layer to new position
+        [CATransaction begin];
+        [CATransaction setAnimationDuration:4.0];
+        self.colorLayer.position = point;
+        [CATransaction commit];
+    }
 }
 
 

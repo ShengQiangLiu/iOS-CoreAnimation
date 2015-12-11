@@ -56,6 +56,7 @@
     self.tableView.tableFooterView = [UIView new];
 
     [self.view addSubview:self.tableView];
+    
 }
 
 - (void)viewDidLayoutSubviews
